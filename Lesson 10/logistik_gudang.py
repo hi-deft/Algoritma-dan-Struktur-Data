@@ -9,6 +9,9 @@ class Stack:
     def pop(self):
         return self.items.pop()
     
+    def is_empty(self):
+        return len(self.items) == 0
+    
     def __repr__(self):
         return "Stack: " + " → ".join(self.items)
 
@@ -22,6 +25,9 @@ class Queue:
     
     def dequeue(self):
         return self.items.pop(0)
+    
+    def is_empty(self):
+        return len(self.items) == 0
     
     def __repr__(self):
         return "Queue: " + " ← ".join(self.items)
